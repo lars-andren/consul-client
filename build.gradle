@@ -1,0 +1,61 @@
+buildscript {
+    allprojects {
+        repositories {
+            mavenCentral()
+            google()
+        }
+    }
+    dependencies {
+
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+
+if (project.hasProperty('projVersion')) {
+    project.version = projVersion
+} else {
+    project.version 'DEBUG_BUILD'
+}
+
+project.group 'se.cloudcharge'
+project.version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.12'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
+    testCompile "org.mockito:mockito-core:1.9.5"
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+configurations {
+    consulClient
+}
+
+artifacts {
+    consulClient (file: file('build/libs/consul-client-' + project.version + '.jar'),
+            name: 'consul-client', type: 'jar') {
+    }
+}
+
+
+uploadConsulClient {
+    description 'Uploads a consul-client library'
+    group 'publishing'
+    repositories {
+        mavenDeployer {
+            repository(url: deployRepoUrl) {
+                authentication(userName: deployRepoUsername, password: deployRepoPassword)
+            }
+        }
+    }
+}
