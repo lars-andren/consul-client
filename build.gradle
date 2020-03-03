@@ -20,10 +20,8 @@ if (project.hasProperty('projVersion')) {
     project.version 'DEBUG_BUILD'
 }
 
-project.group 'se.cloudcharge'
-project.version '1.0-SNAPSHOT'
-
 sourceCompatibility = 1.8
+project.group 'se.cloudcharge'
 
 dependencies {
     compileOnly 'org.projectlombok:lombok:1.18.12'
