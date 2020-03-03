@@ -35,7 +35,7 @@ public class Check {
     @SerializedName("Name")
     private String name;
 
-    @SerializedName("Status")
+    @SerializedName("CheckStatus")
     private CheckStatus checkStatus;
 
     @SerializedName("Notes")

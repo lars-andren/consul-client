@@ -27,17 +27,4 @@ public class CacheConfig {
     private final Duration minDelayBetweenRequests;
     private final Duration timeoutAutoAdjustmentMargin;
     private final boolean timeoutAutoAdjustmentEnabled;
-
-    private CacheConfig(Duration minBackOffDelay, Duration maxBackOffDelay, Duration minDelayBetweenRequests,
-                        boolean timeoutAutoAdjustmentEnabled, Duration timeoutAutoAdjustmentMargin) {
-        this.minBackOffDelay = minBackOffDelay;
-        this.maxBackOffDelay = maxBackOffDelay;
-        this.minDelayBetweenRequests = minDelayBetweenRequests;
-        this.timeoutAutoAdjustmentEnabled = timeoutAutoAdjustmentEnabled;
-        this.timeoutAutoAdjustmentMargin = timeoutAutoAdjustmentMargin;
-    }
-
-    public Duration getWatchDuration() {
-        return DEFAULT_WATCH_DURATION;
-    }
 }

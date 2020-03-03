@@ -81,13 +81,11 @@ public class ConsulConnector {
 
         public Builder withUrl(URL url) {
             this.url = url;
-
             return this;
         }
 
         public Builder withPing(boolean ping) {
             this.ping = ping;
-
             return this;
         }
 
@@ -104,16 +102,6 @@ public class ConsulConnector {
                 Request request = requestBuilder.build();
                 return chain.proceed(request);
             };
-
-            return this;
-        }
-
-        public Builder withHostAndPort(HostAndPort hostAndPort) {
-            try {
-                this.url = new URL("http", hostAndPort.getHost(), hostAndPort.getPort(), "");
-            } catch (MalformedURLException e) {
-                throw new RuntimeException(e);
-            }
 
             return this;
         }
