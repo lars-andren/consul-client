@@ -1,29 +1,35 @@
 package model;
 
 import com.google.gson.annotations.SerializedName;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-import java.util.Optional;
-
-public abstract class Value {
+@Getter
+@Setter
+@ToString
+@Builder
+public class Value {
 
     @SerializedName("CreateIndex")
-    public abstract long getCreateIndex();
+    public long createIndex;
 
     @SerializedName("ModifyIndex")
-    public abstract long getModifyIndex();
+    public long modifyIndex;
 
     @SerializedName("LockIndex")
-    public abstract long getLockIndex();
+    public long lockIndex;
 
     @SerializedName("Key")
-    public abstract String getKey();
+    public String key;
 
     @SerializedName("Flags")
-    public abstract long getFlags();
+    public long flags;
 
     @SerializedName("Value")
-    public abstract Optional<String> getValue();
+    public String value;
 
     @SerializedName("Session")
-    public abstract Optional<String> getSession();
+    public String session;
 }

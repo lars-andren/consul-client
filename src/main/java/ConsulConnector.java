@@ -13,6 +13,7 @@ import okhttp3.Request;
 import okhttp3.internal.Util;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.X509TrustManager;
@@ -235,6 +236,7 @@ public class ConsulConnector {
                     .baseUrl(new URL(consulUrl.getProtocol(), consulUrl.getHost(),
                             consulUrl.getPort(), consulUrl.getFile()).toExternalForm())
                     .addConverterFactory(GsonConverterFactory.create())
+                    .addConverterFactory(ScalarsConverterFactory.create())
                     .client(okHttpClient)
                     .build();
         }

@@ -8,6 +8,8 @@ import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.http.*;
 
+import javax.swing.text.html.Option;
+import java.util.Base64;
 import java.util.List;
 import java.util.Optional;
 
@@ -38,7 +40,19 @@ public class KeyValueClient extends BaseClient {
     }
 
     private Optional<Value> getSingleValue(List<Value> values) {
-        return values != null && !values.isEmpty() ? Optional.of(values.get(0)) : Optional.empty();
+        if (values != null && !values.isEmpty()) {
+            Value value = values.get(0);
+            byte[] decodedBytes = Base64.getDecoder().decode(value.getValue());
+            String decodedString = new String(decodedBytes);
+            value.setValue(decodedString);
+            return Optional.of(value);
+        } else {
+            return Optional.empty();
+        }
+    }
+
+    public boolean putValue(String key, String value) {
+        return putValue(key, value.getBytes());
     }
 
     public boolean putValue(String key, byte[] value) {

@@ -5,18 +5,13 @@ import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 
-public class ConsulConnectorTest {
+public class AgentClientTest extends BaseTest {
 
-    private static final String CONSUL_URL = "http://localhost:8500";
     private static final String SERVICE_ID = "serviceID";
     private static final String SERVICE_NAME = "The Mer-Man service";
 
     @Test
-    public void createConsulConnector() {
-
-        ConsulConnector consulConnector = ConsulConnector.builder()
-                .withUrl(CONSUL_URL)
-                .build();
+    public void agent_register_get() {
 
         AgentClient agentClient = consulConnector.getAgentClient();
 
