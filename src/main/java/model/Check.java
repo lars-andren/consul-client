@@ -30,7 +30,7 @@ public class Check {
     private String node;
 
     @SerializedName("CheckID")
-    private String checkId;
+    private String id;
 
     @SerializedName("Name")
     private String name;

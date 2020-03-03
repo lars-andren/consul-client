@@ -18,6 +18,9 @@ public class Service {
     @SerializedName("ID")
     private String id;
 
+    @SerializedName("Name")
+    private String name;
+
     @SerializedName("model.Service")
     private String service;
 
@@ -41,4 +44,6 @@ public class Service {
 
     @SerializedName("ModifyIndex")
     private Long modifyIndex;
+
+    private Check check;
 }
