@@ -2,7 +2,6 @@ import cache.CacheConfig;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.base.Preconditions;
 import com.google.common.io.BaseEncoding;
-import com.google.common.net.HostAndPort;
 import lombok.Getter;
 import lombok.Setter;
 import monitoring.ClientEventCallback;
@@ -34,13 +33,15 @@ public class ConsulConnector {
 
     private final AgentClient agentClient;
     private final KeyValueClient keyValueClient;
+    private final HealthClient healthClient;
     private final ExecutorService executorService;
     private final OkHttpClient okHttpClient;
 
-    private ConsulConnector(AgentClient agentClient, KeyValueClient keyValueClient, ExecutorService executorService,
-                   OkHttpClient okHttpClient) {
+    private ConsulConnector(AgentClient agentClient, KeyValueClient keyValueClient, HealthClient healthClient, ExecutorService executorService,
+                            OkHttpClient okHttpClient) {
         this.agentClient = agentClient;
         this.keyValueClient = keyValueClient;
+        this.healthClient = healthClient;
         this.executorService = executorService;
         this.okHttpClient = okHttpClient;
     }
@@ -189,11 +190,12 @@ public class ConsulConnector {
 
             AgentClient agentClient = new AgentClient(retrofit, config, eventCallback);
             KeyValueClient keyValueClient = new KeyValueClient(retrofit, config, eventCallback);
+            HealthClient healthClient = new HealthClient(retrofit, config, eventCallback);
 
             if (ping) {
                 agentClient.ping();
             }
-            return new ConsulConnector(agentClient, keyValueClient, executorService, okHttpClient);
+            return new ConsulConnector(agentClient, keyValueClient, healthClient, executorService, okHttpClient);
         }
 
         private String buildUrl(URL url) {
