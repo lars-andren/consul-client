@@ -1,6 +1,6 @@
-import exception.NotRegisteredException;
 import model.Check;
 import model.Service;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.List;
@@ -8,6 +8,7 @@ import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 
+@Ignore
 public class AgentClientTest extends BaseTest {
 
     private static final String SERVICE_ID = "serviceID";

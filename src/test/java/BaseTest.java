@@ -1,5 +1,7 @@
 import org.junit.Before;
+import org.junit.Ignore;
 
+@Ignore
 public abstract class BaseTest {
 
     protected ConsulConnector consulConnector;

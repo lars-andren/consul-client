@@ -1,4 +1,5 @@
 import model.Value;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.Optional;
@@ -6,6 +7,7 @@ import java.util.Optional;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+@Ignore
 public class KeyValueTest extends BaseTest {
 
     private static final String KEY = "I AM THE KEY MASTER";
