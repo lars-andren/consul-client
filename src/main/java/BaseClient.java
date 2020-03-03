@@ -1,7 +1,6 @@
 import cache.CacheConfig;
 import monitoring.ClientEventCallback;
 import monitoring.ClientEventHandler;
-import transport.DefaultHttp;
 import transport.Http;
 
 public class BaseClient {
@@ -9,8 +8,6 @@ public class BaseClient {
     public static final String DEFAULT_HOST = "localhost";
     public static final int DEFAULT_PORT = 8500;
     public static final String DEFAULT_PATH = "";
-
-    private static final DefaultHttp DEFAULT_HTTP_TRANSPORT = new DefaultHttp();
 
     private final ClientEventHandler eventHandler;
     private final CacheConfig cacheConfig;
