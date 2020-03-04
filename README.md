@@ -1,3 +1,4 @@
+``` java
 ConsulConnector consulConnector = ConsulConnector.builder()
             .withUrl(CONSUL_URL_WITH_PORT)
             .build();
@@ -17,3 +18,4 @@ Service service = Service.builder()
        .build();
 
 agentClient.register(service);
+```
