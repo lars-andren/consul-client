@@ -1,10 +1,12 @@
-import cache.CacheConfig;
+package se.cloudcharge.consul;
+
+import se.cloudcharge.consul.cache.CacheConfig;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.base.Preconditions;
 import com.google.common.io.BaseEncoding;
 import lombok.Getter;
 import lombok.Setter;
-import monitoring.ClientEventCallback;
+import se.cloudcharge.consul.monitoring.ClientEventCallback;
 import okhttp3.Dispatcher;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;

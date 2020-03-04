@@ -1,4 +1,4 @@
-package cache;
+package se.cloudcharge.consul.cache;
 
 import lombok.Getter;
 import lombok.ToString;

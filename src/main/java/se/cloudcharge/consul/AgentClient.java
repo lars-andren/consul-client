@@ -1,11 +1,13 @@
-import cache.CacheConfig;
+package se.cloudcharge.consul;
+
+import se.cloudcharge.consul.cache.CacheConfig;
 import com.google.common.collect.ImmutableMap;
-import exception.ConsulException;
-import exception.NotRegisteredException;
-import model.Check;
-import model.Service;
-import model.State;
-import monitoring.ClientEventCallback;
+import se.cloudcharge.consul.exception.ConsulException;
+import se.cloudcharge.consul.exception.NotRegisteredException;
+import se.cloudcharge.consul.model.Check;
+import se.cloudcharge.consul.model.Service;
+import se.cloudcharge.consul.model.State;
+import se.cloudcharge.consul.monitoring.ClientEventCallback;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.http.*;

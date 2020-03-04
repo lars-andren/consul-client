@@ -1,4 +1,5 @@
-import model.Value;
+import se.cloudcharge.consul.KeyValueClient;
+import se.cloudcharge.consul.model.Value;
 import org.junit.Ignore;
 import org.junit.Test;
 

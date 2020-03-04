@@ -1,4 +1,4 @@
-package model;
+package se.cloudcharge.consul.model;
 
 import com.google.gson.annotations.SerializedName;
 import lombok.Builder;

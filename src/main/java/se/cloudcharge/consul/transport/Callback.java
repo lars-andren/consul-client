@@ -1,4 +1,4 @@
-package transport;
+package se.cloudcharge.consul.transport;
 
 public interface Callback<T> {
 

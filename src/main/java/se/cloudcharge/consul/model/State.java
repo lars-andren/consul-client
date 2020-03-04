@@ -1,4 +1,4 @@
-package model;
+package se.cloudcharge.consul.model;
 
 import lombok.Getter;
 

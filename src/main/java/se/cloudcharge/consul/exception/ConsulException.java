@@ -1,4 +1,4 @@
-package exception;
+package se.cloudcharge.consul.exception;
 
 import lombok.Getter;
 import okhttp3.ResponseBody;

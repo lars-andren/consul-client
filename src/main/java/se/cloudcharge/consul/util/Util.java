@@ -1,4 +1,4 @@
-package util;
+package se.cloudcharge.consul.util;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URI;

@@ -1,5 +1,7 @@
-import model.Check;
-import model.Service;
+import se.cloudcharge.consul.AgentClient;
+import se.cloudcharge.consul.HealthClient;
+import se.cloudcharge.consul.model.Check;
+import se.cloudcharge.consul.model.Service;
 import org.junit.Ignore;
 import org.junit.Test;
 

@@ -1,9 +1,9 @@
-package transport;
+package se.cloudcharge.consul.transport;
 
 import com.google.common.annotations.VisibleForTesting;
-import exception.ConsulException;
-import model.ConsulResponse;
-import monitoring.ClientEventHandler;
+import se.cloudcharge.consul.exception.ConsulException;
+import se.cloudcharge.consul.model.ConsulResponse;
+import se.cloudcharge.consul.monitoring.ClientEventHandler;
 import okhttp3.Headers;
 import retrofit2.Call;
 import retrofit2.Response;

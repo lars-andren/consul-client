@@ -1,19 +1,20 @@
-import cache.CacheConfig;
-import exception.ConsulException;
-import model.Value;
-import monitoring.ClientEventCallback;
+package se.cloudcharge.consul;
+
+import se.cloudcharge.consul.cache.CacheConfig;
+import se.cloudcharge.consul.exception.ConsulException;
+import se.cloudcharge.consul.model.Value;
+import se.cloudcharge.consul.monitoring.ClientEventCallback;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.http.*;
 
-import javax.swing.text.html.Option;
 import java.util.Base64;
 import java.util.List;
 import java.util.Optional;
 
-import static util.Util.trimLeadingSlash;
+import static se.cloudcharge.consul.util.Util.trimLeadingSlash;
 
 public class KeyValueClient extends BaseClient {
 

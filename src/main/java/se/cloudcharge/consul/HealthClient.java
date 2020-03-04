@@ -1,9 +1,11 @@
-import cache.CacheConfig;
-import model.Check;
-import model.ConsulResponse;
-import model.Service;
-import model.State;
-import monitoring.ClientEventCallback;
+package se.cloudcharge.consul;
+
+import se.cloudcharge.consul.cache.CacheConfig;
+import se.cloudcharge.consul.model.Check;
+import se.cloudcharge.consul.model.ConsulResponse;
+import se.cloudcharge.consul.model.Service;
+import se.cloudcharge.consul.model.State;
+import se.cloudcharge.consul.monitoring.ClientEventCallback;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.http.GET;

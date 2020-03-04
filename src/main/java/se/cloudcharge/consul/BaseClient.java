@@ -1,7 +1,9 @@
-import cache.CacheConfig;
-import monitoring.ClientEventCallback;
-import monitoring.ClientEventHandler;
-import transport.Http;
+package se.cloudcharge.consul;
+
+import se.cloudcharge.consul.cache.CacheConfig;
+import se.cloudcharge.consul.monitoring.ClientEventCallback;
+import se.cloudcharge.consul.monitoring.ClientEventHandler;
+import se.cloudcharge.consul.transport.Http;
 
 public class BaseClient {
 

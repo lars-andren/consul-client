@@ -1,5 +1,6 @@
 import org.junit.Before;
 import org.junit.Ignore;
+import se.cloudcharge.consul.ConsulConnector;
 
 @Ignore
 public abstract class BaseTest {

@@ -1,6 +1,6 @@
-package monitoring;
+package se.cloudcharge.consul.monitoring;
 
-import cache.CacheDescriptor;
+import se.cloudcharge.consul.cache.CacheDescriptor;
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import okhttp3.Request;
 
