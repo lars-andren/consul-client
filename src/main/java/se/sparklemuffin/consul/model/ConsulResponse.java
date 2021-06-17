@@ -1,4 +1,4 @@
-package se.cloudcharge.consul.model;
+package se.sparklemuffin.consul.model;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

@@ -1,5 +1,5 @@
-import se.cloudcharge.consul.KeyValueClient;
-import se.cloudcharge.consul.model.Value;
+import se.sparklemuffin.consul.KeyValueClient;
+import se.sparklemuffin.consul.model.Value;
 import org.junit.Ignore;
 import org.junit.Test;
 

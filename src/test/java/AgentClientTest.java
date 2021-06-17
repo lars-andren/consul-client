@@ -1,7 +1,7 @@
-import se.cloudcharge.consul.AgentClient;
-import se.cloudcharge.consul.HealthClient;
-import se.cloudcharge.consul.model.Check;
-import se.cloudcharge.consul.model.Service;
+import se.sparklemuffin.consul.AgentClient;
+import se.sparklemuffin.consul.HealthClient;
+import se.sparklemuffin.consul.model.Check;
+import se.sparklemuffin.consul.model.Service;
 import org.junit.Ignore;
 import org.junit.Test;
 

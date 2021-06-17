@@ -1,4 +1,4 @@
-package se.cloudcharge.consul.model;
+package se.sparklemuffin.consul.model;
 
 import com.google.gson.annotations.SerializedName;
 import lombok.Builder;

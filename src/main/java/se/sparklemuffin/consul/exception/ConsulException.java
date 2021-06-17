@@ -1,4 +1,4 @@
-package se.cloudcharge.consul.exception;
+package se.sparklemuffin.consul.exception;
 
 import lombok.Getter;
 import okhttp3.ResponseBody;

@@ -1,4 +1,4 @@
-package se.cloudcharge.consul.cache;
+package se.sparklemuffin.consul.cache;
 
 
 import com.google.common.annotations.VisibleForTesting;

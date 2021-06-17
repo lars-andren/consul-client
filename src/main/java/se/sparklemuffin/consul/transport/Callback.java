@@ -1,4 +1,4 @@
-package se.cloudcharge.consul.transport;
+package se.sparklemuffin.consul.transport;
 
 public interface Callback<T> {
 

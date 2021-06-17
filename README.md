@@ -1,9 +1,9 @@
 ``` java
-se.cloudcharge.consul.ConsulConnector consulConnector = se.cloudcharge.consul.ConsulConnector.builder()
+ConsulConnector consulConnector = ConsulConnector.builder()
             .withUrl(CONSUL_URL_WITH_PORT)
             .build();
 
-se.cloudcharge.consul.AgentClient agentClient = consulConnector.getAgentClient();
+AgentClient agentClient = consulConnector.getAgentClient();
 
 Check check = Check.builder()
         .ttl("10s")

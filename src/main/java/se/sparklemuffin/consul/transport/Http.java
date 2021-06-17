@@ -1,9 +1,9 @@
-package se.cloudcharge.consul.transport;
+package se.sparklemuffin.consul.transport;
 
 import com.google.common.annotations.VisibleForTesting;
-import se.cloudcharge.consul.exception.ConsulException;
-import se.cloudcharge.consul.model.ConsulResponse;
-import se.cloudcharge.consul.monitoring.ClientEventHandler;
+import se.sparklemuffin.consul.exception.ConsulException;
+import se.sparklemuffin.consul.model.ConsulResponse;
+import se.sparklemuffin.consul.monitoring.ClientEventHandler;
 import okhttp3.Headers;
 import retrofit2.Call;
 import retrofit2.Response;

@@ -1,9 +1,9 @@
-package se.cloudcharge.consul;
+package se.sparklemuffin.consul;
 
-import se.cloudcharge.consul.cache.CacheConfig;
-import se.cloudcharge.consul.monitoring.ClientEventCallback;
-import se.cloudcharge.consul.monitoring.ClientEventHandler;
-import se.cloudcharge.consul.transport.Http;
+import se.sparklemuffin.consul.cache.CacheConfig;
+import se.sparklemuffin.consul.monitoring.ClientEventCallback;
+import se.sparklemuffin.consul.monitoring.ClientEventHandler;
+import se.sparklemuffin.consul.transport.Http;
 
 public class BaseClient {
 

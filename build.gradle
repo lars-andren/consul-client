@@ -21,7 +21,7 @@ if (project.hasProperty('projVersion')) {
 }
 
 sourceCompatibility = 1.8
-project.group 'se.cloudcharge'
+project.group 'se.sparklemuffin'
 
 dependencies {
     compileOnly 'org.projectlombok:lombok:1.18.12'

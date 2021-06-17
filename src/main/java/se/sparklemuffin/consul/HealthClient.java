@@ -1,11 +1,11 @@
-package se.cloudcharge.consul;
+package se.sparklemuffin.consul;
 
-import se.cloudcharge.consul.cache.CacheConfig;
-import se.cloudcharge.consul.model.Check;
-import se.cloudcharge.consul.model.ConsulResponse;
-import se.cloudcharge.consul.model.Service;
-import se.cloudcharge.consul.model.State;
-import se.cloudcharge.consul.monitoring.ClientEventCallback;
+import se.sparklemuffin.consul.cache.CacheConfig;
+import se.sparklemuffin.consul.model.Check;
+import se.sparklemuffin.consul.model.ConsulResponse;
+import se.sparklemuffin.consul.model.Service;
+import se.sparklemuffin.consul.model.State;
+import se.sparklemuffin.consul.monitoring.ClientEventCallback;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.http.GET;

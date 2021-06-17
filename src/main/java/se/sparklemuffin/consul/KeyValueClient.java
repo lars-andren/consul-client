@@ -1,9 +1,9 @@
-package se.cloudcharge.consul;
+package se.sparklemuffin.consul;
 
-import se.cloudcharge.consul.cache.CacheConfig;
-import se.cloudcharge.consul.exception.ConsulException;
-import se.cloudcharge.consul.model.Value;
-import se.cloudcharge.consul.monitoring.ClientEventCallback;
+import se.sparklemuffin.consul.cache.CacheConfig;
+import se.sparklemuffin.consul.exception.ConsulException;
+import se.sparklemuffin.consul.model.Value;
+import se.sparklemuffin.consul.monitoring.ClientEventCallback;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
 import retrofit2.Call;
@@ -14,7 +14,7 @@ import java.util.Base64;
 import java.util.List;
 import java.util.Optional;
 
-import static se.cloudcharge.consul.util.Util.trimLeadingSlash;
+import static se.sparklemuffin.consul.util.Util.trimLeadingSlash;
 
 public class KeyValueClient extends BaseClient {
 

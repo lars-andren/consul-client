@@ -1,4 +1,4 @@
-package se.cloudcharge.consul.exception;
+package se.sparklemuffin.consul.exception;
 
 public class NotRegisteredException extends Exception {
     public NotRegisteredException(String message) {

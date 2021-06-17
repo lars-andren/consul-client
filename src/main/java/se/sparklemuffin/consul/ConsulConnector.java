@@ -1,12 +1,12 @@
-package se.cloudcharge.consul;
+package se.sparklemuffin.consul;
 
-import se.cloudcharge.consul.cache.CacheConfig;
+import se.sparklemuffin.consul.cache.CacheConfig;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.base.Preconditions;
 import com.google.common.io.BaseEncoding;
 import lombok.Getter;
 import lombok.Setter;
-import se.cloudcharge.consul.monitoring.ClientEventCallback;
+import se.sparklemuffin.consul.monitoring.ClientEventCallback;
 import okhttp3.Dispatcher;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;

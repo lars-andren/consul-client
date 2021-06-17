@@ -1,4 +1,4 @@
-package se.cloudcharge.consul.util;
+package se.sparklemuffin.consul.util;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URI;

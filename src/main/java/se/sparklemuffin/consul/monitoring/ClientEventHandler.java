@@ -1,6 +1,6 @@
-package se.cloudcharge.consul.monitoring;
+package se.sparklemuffin.consul.monitoring;
 
-import se.cloudcharge.consul.cache.CacheDescriptor;
+import se.sparklemuffin.consul.cache.CacheDescriptor;
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import okhttp3.Request;
 

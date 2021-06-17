@@ -1,6 +1,6 @@
-package se.cloudcharge.consul.transport;
+package se.sparklemuffin.consul.transport;
 
-import se.cloudcharge.consul.model.ConsulResponse;
+import se.sparklemuffin.consul.model.ConsulResponse;
 
 public interface ConsulResponseCallback<T> {
 
